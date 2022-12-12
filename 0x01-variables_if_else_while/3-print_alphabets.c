@@ -1,26 +1,22 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
- * main - nreturns alphabets both lower and upper cases
- *
- * Return: Always 0 (success)
- */
+ * main-program entry point
+ * Return:0 no error, non zero if error
+ **/
 int main(void)
 {
-	int ch = 'a';
-	int CH = 'A';
+	char i;
+	char j;
 
-	while (ch <= 'z')
+	for (i = 'a'; i <= 'z'; i++)
 	{
-		putchar(ch);
-		ch++;
+		putchar(i);
 	}
-	while (CH <= 'Z')
+	for (j = 'A'; j <= 'Z'; j++)
 	{
-		putchar(CH);
-		CH++;
+		putchar(j);
 	}
 	putchar('\n');
 	return (0);
-}	
+}
